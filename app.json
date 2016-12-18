@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4cc9fe",
+    "navigationBarTitleText": "纸记自己",
+    "navigationBarTextStyle":"#fff"
+  },
+  "url": {
+    "login": "http://fanfou.com/oauth/access_token"
+  }
+}

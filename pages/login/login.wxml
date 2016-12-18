@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view  class="appinfo">
+    <view class="appinfo-logo" background-size="cover">饭</view>
+  </view>
+  <view class="login">
+    <input 
+      bindinput="bindEmailInput"
+      bindblur="bindBlur"
+      class="app-login"
+      placeholder-class="app-input-placeholder"
+      placeholder="Email 或手机号" auto-focus/>
+    <input
+      bindinput="bindPwdInput"
+      bindblur="bindBlur"
+      class="app-password"
+      placeholder-class="app-input-placeholder"
+      type="password"
+      placeholder="您在饭否的密码"/>
+    <button bindtap="bindLoginTap" class="app-login-btn" type="primary" plain="true"> 登录 </button>
+  </view>
+
+  <view class="app-motto">
+    <text class="app-motto">{{appInfo.moto}}</text>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+/**index.wxss**/
+.appinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appinfo-logo {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-color: #4cc9fe;
+  color: #fff;
+  font-size: 128rpx;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 128rpx;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.appinfo-title {
+  color: #aaa;
+}
+
+.app-motto {
+  margin-top: 200px;
+}
+
+.app-login, .app-password {
+  border: 1px solid #eee;
+  border-radius: 2px;
+  margin-top: 30px;
+  color: #777;
+  padding: 3px;
+}
+
+.app-password {
+  margin-top: 10px;
+}
+
+.app-login-btn {
+  margin-top: 20px;
+}
+
+.app-input-placeholder {
+  color: #aaa;
+}
