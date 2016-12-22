@@ -1,0 +1,22 @@
+.index-container {
+    padding: 15px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.index-message {
+    font-size: 14pt;
+    color: #353535;
+}
+
+.index-footer {
+    display: flex;
+    justify-content: space-between;
+
+    color: #b2b2b2;
+    font-size: 13pt;
+    margin-top: 5px;
+}
+
+.index-content {
+    text-justify: justify; 
+}

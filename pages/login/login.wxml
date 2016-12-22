@@ -19,8 +19,4 @@
       placeholder="您在饭否的密码"/>
     <button bindtap="bindLoginTap" class="app-login-btn" type="primary" plain="true"> 登录 </button>
   </view>
-
-  <view class="app-motto">
-    <text class="app-motto">{{appInfo.moto}}</text>
-  </view>
 </view>

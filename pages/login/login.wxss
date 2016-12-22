@@ -23,10 +23,6 @@
   color: #aaa;
 }
 
-.app-motto {
-  margin-top: 200px;
-}
-
 .app-login, .app-password {
   border: 1px solid #eee;
   border-radius: 2px;

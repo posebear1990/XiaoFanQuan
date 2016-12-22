@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/login/login"
   ],
   "window":{
@@ -7,6 +8,18 @@
     "navigationBarBackgroundColor": "#4cc9fe",
     "navigationBarTitleText": "纸记自己",
     "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "/resource/img/index.png",
+      "selectedIconPath": "/resource/img/index-active.png"
+    },{
+      "pagePath": "pages/login/login",
+      "iconPath": "/resource/img/profile.png",
+      "selectedIconPath": "/resource/img/profile-active.png"
+    }],
+    "borderStyle": "white"
   },
   "url": {
     "login": "http://fanfou.com/oauth/access_token"

@@ -1,6 +1,6 @@
 var Hashes = require("../../utils/hashes");
 var SignatureGenrator = require("../../utils/oauthSignatureGenerator");
-var uTools = require("../../utils");
+var uTools = require("../../utils/util");
 var app = getApp();
 
 Page({
