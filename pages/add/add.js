@@ -31,9 +31,9 @@ Page({
                 oauth_signature_method: "HMAC-SHA1",
                 status: that.data.text
               };
-console.log(params);
+
           var signature = new SignatureGenrator(httpMethod, updateApi, params, signatureKey);
-console.log(signature);
+
           wx.request({
             url: signature.url,
             data: signature.parameters,
@@ -42,7 +42,7 @@ console.log(signature);
               'Content-Type': 'application/x-www-form-urlencoded'
             },
             success: function(res){
-              console.log(res);
+
               wx.showToast({
                 title: "发送成功",
                 icon: "success",

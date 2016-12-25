@@ -35,6 +35,11 @@ Page({
     var oauthTokenObj = wx.getStorage({
         key: "oauthToken",
         success: function(res) {
+            if(!Object.keys(res.data).length) {
+              wx.redirectTo({url: "/pages/login/login"});
+              return ;
+            }
+
             var oauthTokenObj = res.data;
 
             var userTimeLineApi = api.api + api.userTimeLine,
@@ -60,6 +65,10 @@ Page({
               data: signature.parameters,
               method: 'GET',
               success: function(res){
+                if(res.statusCode !== 200) {
+                  wx.redirectTo({url: "/pages/login/login"});
+                }
+
                 that.formatTime(res.data);
                  
                 if(page) {
@@ -73,13 +82,11 @@ Page({
 
 
                 that.setData({timeline: res.data});
-                console.log(that.data);
               },
               fail: function() {
                 wx.redirectTo({url: "/pages/login/login"});     
               }
             });
-            console.log(signature);
         },
         fail: function(res) {
           wx.redirectTo({url: "/pages/login/login"});

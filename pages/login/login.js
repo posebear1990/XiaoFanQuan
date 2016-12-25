@@ -8,7 +8,7 @@ Page({
     appInfo: {
       name: "饭否",
       title: "点击登录饭否",
-      img: "/resource/img/appinfo-img.png"
+      img: "/resource/img/logo.png"
     },
     email: "",
     pwd: ""
@@ -34,7 +34,6 @@ Page({
     var consumerSecret = api.consumerSecret + "&";
 
     var signature = new SignatureGenrator(httpMethod, url, params, consumerSecret);
-    console.log(signature);
 
     wx.request({
       url: signature.url,
@@ -59,7 +58,7 @@ Page({
         }
       },
       fail: function(res) {
-        console.log(res.data);
+        wx.redirectTo({url: "/pages/login/login"});
       }
     });
   },

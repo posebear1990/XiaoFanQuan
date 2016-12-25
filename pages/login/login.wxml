@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <view  class="appinfo">
-    <view class="appinfo-logo" background-size="cover">饭</view>
+    <image class="appinfo-logo" src="{{appInfo.img}}" background-size="cover"></image>
   </view>
   <view class="login">
     <input 

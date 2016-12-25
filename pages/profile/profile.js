@@ -33,7 +33,6 @@ Page({
               data: signature.parameters,
               method: 'GET',
               success: function(res){
-                console.log(res)
                 if(res.statusCode === 200) {
                   that.setData({
                     profile: res.data
@@ -57,7 +56,7 @@ Page({
       title: "关于",
       content: "纸记自己是一个只能用来浏览和记录自己饭否消息，不能浏览他人消息的微信小程序。项目的 github 地址是：https://github.com/posebear1990/twiteMe，欢迎来提PR^_^",
       showCancel: false
-    })
+    });
   },
   bindLogoutTap: function() {
     wx.showModal({
