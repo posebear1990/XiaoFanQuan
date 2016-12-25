@@ -35,7 +35,6 @@ function SignatureGenrator(httpMethod, url, parameters, consumerSecret) {
 
         var paramStrList = [],
             paramStr = "";
-            debugger
         for(var k in parameters) {
             paramStrList.push(encodeURIComponent(k) + "=" + encodeURIComponent(parameters[k]));
         }

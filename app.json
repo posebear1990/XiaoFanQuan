@@ -1,22 +1,28 @@
 {
   "pages":[
+    "pages/profile/profile",
     "pages/index/index",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/add/add"
   ],
   "window":{
-    "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#4cc9fe",
     "navigationBarTitleText": "纸记自己",
-    "navigationBarTextStyle":"#fff"
+    "navigationBarTextStyle":"#fff",
+    "backgroundTextStyle": "dark"
   },
   "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#4cc9fe",
     "list": [{
       "pagePath": "pages/index/index",
       "iconPath": "/resource/img/index.png",
+      "text": "主页",
       "selectedIconPath": "/resource/img/index-active.png"
     },{
-      "pagePath": "pages/login/login",
+      "pagePath": "pages/profile/profile",
       "iconPath": "/resource/img/profile.png",
+      "text": "个人",
       "selectedIconPath": "/resource/img/profile-active.png"
     }],
     "borderStyle": "white"

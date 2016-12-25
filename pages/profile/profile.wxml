@@ -1,0 +1,30 @@
+<scroll-view scroll-y="true">
+  <view class="profile-container">
+    <view class="profile-header">
+      <image class="profile-header-img" src="{{profile.profile_image_url}}"></image>
+      <text class="profile-header-nick">{{profile.name}}</text>
+      <text class="profile-header-info">{{profile.gender}} {{profile.location}}</text>
+      <text class="profile-header-intro">自述： {{profile.description}}</text>
+    </view>
+    <view class="profile-statistics">
+      <view class="profile-header-count">
+        <text class="profile-header-count-name">饭否</text>
+        <text class="profile-header-count-value">{{profile.statuses_count}}</text>
+      </view>
+      <view class="profile-header-follow">
+        <text class="profile-header-follow-name">关注</text>
+        <text class="profile-header-follow-value">{{profile.friends_count}}</text>
+      </view>
+      <view class="profile-header-fans">
+        <text class="profile-header-fans-name">粉丝</text>
+        <text class="profile-header-fans-value">{{profile.followers_count}}</text>
+      </view>
+    </view>
+  </view>
+  <view bindtap="bindAboutTap" class="profile-about">
+    关于
+  </view>
+  <view class="profile-logout">
+    <button bindtap="bindLogoutTap" class="profile-logout-btn" type="warn" > 退出登录 </button>
+  </view>
+</scroll-view>

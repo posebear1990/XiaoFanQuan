@@ -13,10 +13,26 @@
     justify-content: space-between;
 
     color: #b2b2b2;
-    font-size: 13pt;
+    font-size: 12pt;
     margin-top: 5px;
 }
 
 .index-content {
     text-justify: justify; 
+}
+
+.index-add {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 100%;
+
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+.index-add:active {
+    width: 48px;
+    height: 48px;
 }

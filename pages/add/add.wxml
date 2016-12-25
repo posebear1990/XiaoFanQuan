@@ -1,0 +1,9 @@
+<!--textarea.wxml-->
+<view class="add-text-area-container">
+  <textarea class="add-text-area" maxlength="140" placeholder-class="app-textarea-placeholder" bindinput="bindTextInput" auto-focus placeholder="记录下你的所思所想吧😆" />
+</view>
+<view class="add-tab-bar">
+  <view class="add-send">
+    <image bindtap="bindSendTap" class="add-send-icon" src="/resource/img/send.png"></image>
+  </view>
+</view>

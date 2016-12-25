@@ -38,7 +38,3 @@
 .app-login-btn {
   margin-top: 20px;
 }
-
-.app-input-placeholder {
-  color: #aaa;
-}

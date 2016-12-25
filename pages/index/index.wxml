@@ -1,21 +1,14 @@
 <!--index.wxml-->
 <scroll-view scroll-y="true">
-  <view class="index-container">
+  <view wx:for="{{timeline}}" class="index-container" wx:key="{{index}}">
     <view class="index-content">
-      <text class="index-message">后来许多人问我一个人夜晚踟蹰路上的心情，我想起的却不是孤单和路长，而是波澜壮阔的海和天空中闪耀的星光。</text>
+      <text class="index-message">{{item.text}}</text>
     </view>
     <view class="index-footer">
-      <text class="index-date">2016-11-16 21:27</text>
-      <text class="index-from">通过手机</text>
-    </view>
-  </view>
-  <view class="index-container">
-    <view class="index-content">
-      <text class="index-message">尤其是自己拍下这张照片的时候，一个人爬到半山腰看远处城市的烟火，当花火大会结束时，一切回归黑暗，我靠着手机的灯光寻找下山的路，那时候的孤独和恐惧，至今仍然无法释怀…内心默念着这句话，最后终于走到了有灯光的路上。那一刻，像获得重生。</text>
-    </view>
-    <view class="index-footer">
-      <text class="index-date">2016-11-16 21:27</text>
-      <text class="index-from">通过网页</text>
+      <text class="index-date">{{item.created_at}}</text>
+      <text class="index-from">通过:{{item.source}}</text>
     </view>
   </view>
 </scroll-view>
+
+<image bindtap="bindAddTap" class="index-add" src="/resource/img/logo.png"></image>

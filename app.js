@@ -3,14 +3,8 @@ var api = require("/config/api");
 App({
   onLaunch: function () {
   },
-  globalData:{
-    appInfo:{
-      name: "饭否",
-      title: "点击登录饭否",
-      moto: "今天，我不关心人类，我只记自己",
-      img: "/resource/img/appinfo-img.png",
-      api: api
-    }
+  globalData: {
+    api: api
   },
   generateOAuthSignature: function (httpMethod, url, parameters) {
     var httpMethod = httpMethod.toUpperCase();
