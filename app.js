@@ -1,7 +1,11 @@
+const WeChatTracker = require("./hwet/bundle.js").WeChatTracker;
 //app.js
-var api = require("/config/api");
+const api = require("/config/api");
 App({
   onLaunch: function () {
+    const tricker = new WeChatTracker({appkey: 'appKey9527'});
+    console.log(tricker.init)
+    tricker.init();
   },
   globalData: {
     api: api
@@ -12,12 +16,12 @@ App({
     var encodeUrl = encodeURIComponent(url);
 
     var paramStrList = [],
-        paramStr = "";
-        
-    for(var k in parameters) {
-        paramStrList.push(encodeURIComponent(k) + "=" + encodeURIComponent(parameters[k]));
+      paramStr = "";
+
+    for (var k in parameters) {
+      paramStrList.push(encodeURIComponent(k) + "=" + encodeURIComponent(parameters[k]));
     }
-    paramStr = encodeURIComponent( paramStrList.sort().join("&") );
+    paramStr = encodeURIComponent(paramStrList.sort().join("&"));
 
     return httpMethod + "&" + encodeUrl + "&" + paramStr;
   }
