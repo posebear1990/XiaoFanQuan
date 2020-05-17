@@ -1,0 +1,72 @@
+/* 按钮 */
+.main-button-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  width: 1rpx;
+  height: 1rpx;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+}
+.main-button-container.active {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(250, 250, 250, 0.85);
+}
+
+.main-button-container .main-button {
+  position: absolute;
+  right: 10rpx;
+  bottom: 10rpx;
+  width: 150rpx;
+  height: 150rpx;
+  transform: rotate(-45deg);
+  z-index: 2;
+  transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+}
+.main-button-container.touched .main-button {
+  width: 190rpx;
+  height: 190rpx;
+  right: 0rpx;
+  bottom: 0rpx;
+}
+.main-button-container::after {
+  content: " ";
+  display: block;
+  width: 96rpx;
+  height: 88rpx;
+  border-radius: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+  right: 32rpx;
+  bottom: 36rpx;
+  box-shadow: -8rpx 8rpx 18rpx 6rpx rgba(55, 55, 55, 0.3);
+}
+.main-button-container .helper-button{
+  display: none;
+}
+.main-button-container.active .helper-button {
+  display: block;
+  right: 0;
+  bottom: 0;
+}
+
+.main-button-container.active .helper-button .helper-button-button {
+  position: absolute;
+}
+
+.main-button-container.active .helper-button .helper-button-button.compile {
+  right: 78.7rpx;
+  bottom: 242rpx;
+}
+.main-button-container.active .helper-button .helper-button-button.photo {
+  right: 180rpx;
+  bottom: 180rpx;
+}
+.main-button-container.active .helper-button .helper-button-button.setting {
+  bottom: 78.7rpx;
+  right: 242rpx;
+}
+

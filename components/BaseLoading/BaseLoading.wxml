@@ -1,0 +1,3 @@
+<view class="loading-container {{show && 'active'}}">
+    <view class="loading"></view>
+</view>

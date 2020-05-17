@@ -1,0 +1,5 @@
+<view class="button-container">
+    <view class="button {{icon}} {{disabled && 'disabled'}}" catch:tap="onTap">
+        <text class="icon-icon_{{icon}} iconfont" />
+    </view>
+</view>

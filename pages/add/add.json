@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "base-button": "/components/BaseButton/BaseButton",
+    "base-loading": "/components/BaseLoading/BaseLoading"
+  }
+}

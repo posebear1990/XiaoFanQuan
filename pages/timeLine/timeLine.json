@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "base-loading": "/components/BaseLoading/BaseLoading",
+    "base-message": "/components/BaseMessage/BaseMessage"
+  }
+}

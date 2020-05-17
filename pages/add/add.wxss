@@ -1,0 +1,101 @@
+page {
+  height: 100%;
+}
+
+.add-text-area-container {
+  overflow: hidden;
+  height: 100%;
+}
+.add-text-area-container .add-text-area {
+  padding: 20rpx;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.add-send {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 20rpx;
+}
+
+.add-send .add-text-progress {
+  text-align: right;
+}
+.add-send .add-text-progress .progress-current {
+  padding: 5rpx 10rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  width: 100rpx;
+  vertical-align: middle;
+  color: #f0a0ac;
+  display: inline-block;
+  text-align: center;
+  margin-right: 7rpx;
+  margin-bottom: 20rpx;
+}
+
+.add-send-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-send .add-send-img-upload {
+  height: 140rpx;
+  width: 140rpx;
+  border: 5rpx dashed #f0a0ac;
+  background: #fff;
+  overflow: hidden;
+  color: #f0a0ac;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.add-send .add-send-img-upload.active {
+  border: 1rpx solid #f0a0ac;
+  background: #fff;
+}
+.add-send .add-send-img-upload .iconfont {
+  font-size: 50rpx;
+}
+.add-send .close {
+  position: absolute;
+  background: #fff;
+  color: #f25859;
+  border-radius: 100%;
+  width: 24rpx;
+  height: 24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50rpx;
+  margin-left: 120rpx;
+  margin-top: -65rpx;
+}
+
+.add-send .button-container {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.add-send .button-container .button,
+.add-send .button-container .button.disabled:hover {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.add-send .button-container .button:hover {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.add-send .button-container .button .iconfont {
+  font-size: 55rpx;
+}

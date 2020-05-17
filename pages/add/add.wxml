@@ -1,0 +1,18 @@
+<!-- textarea.wxml -->
+<view class="add-text-area-container">
+  <textarea class="add-text-area" placeholder-class="app-textarea-placeholder" bindinput="bindTextInput" focus="{{focus}}" placeholder="{{placeholder}}" adjust-position="{{false}}" bind:keyboardheightchange="onHeightChange" maxlength="300" value="{{text}}" cursor="{{cursor}}" />
+</view>
+<view class="add-send" style="margin-bottom: {{buttonMargin}}px;">
+  <view class="add-text-progress">
+    <text class="progress-current">{{count}}</text>
+  </view>
+  <view class="add-send-action">
+    <view class="add-send-img-upload {{tempFilePath && 'active'}}" bind:tap="onImgUploadTap">
+      <image wx:if="{{tempFilePath}}" src="{{tempFilePath}}" mode="aspectFill" style="height: 100%;width: 100%;" />
+      <text wx:else class="icon-icon_photo iconfont" />
+    </view>
+    <text wx:if="{{tempFilePath}}" class="icon-icon_roundclose_fill iconfont close" catch:tap="onImgClearTap" />
+    <base-button bind:tap="bindSendTap" icon="send" disabled="{{(!text && !tempFilePath) || showLoading}}" />
+  </view>
+</view>
+<base-loading show="{{showLoading}}" />

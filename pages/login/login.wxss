@@ -1,0 +1,40 @@
+/**index.wxss**/
+.login {
+  width: 70%;
+  margin-top: -30%;
+}
+.login .login-tip {
+  font-size: 18px;
+  color: #f0a0ac;
+  text-align: center;
+}
+.login .login-tip .login-please {
+  margin-top: 200rpx;
+  margin-bottom: 10rpx;
+  font-size: 14px;
+  text-align: left;
+  color: #ffd1d9;
+}
+
+.app-login,
+.app-password {
+  border-bottom: 1px solid #ffd1d9;
+  padding: 3px;
+  color: #f0a0ac;
+}
+
+.app-password {
+  margin-top: 20rpx;
+}
+
+.app-login-btn {
+  margin-top: 60rpx;
+
+  color: #f0a0ac !important;
+  border: 1px solid #f0a0ac !important;
+  line-height: 68rpx;
+}
+.app-login-btn[aria-disabled="true"] {
+  color: #ffd1d9 !important;
+  border: 1px solid #ffd1d9 !important;
+}

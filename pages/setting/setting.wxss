@@ -1,0 +1,160 @@
+.friend-container .avater-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13rpx 20rpx 15rpx;
+  background: #f0a0ac;
+  color: #fff;
+  box-shadow: 4rpx 10rpx 35rpx -25rpx rgba(55, 55, 55, 0.2);
+  position: fixed;
+  top: 0;
+}
+.friend-container .avater-list .avater {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 120rpx;
+  position: relative;
+}
+.friend-container .avater-list .avater .avater-image {
+  width: 95rpx;
+  height: 95rpx;
+  border-radius: 100%;
+  background: #fff;
+  box-shadow: inset 0 0 25rpx 4rpx rgba(55, 55, 55, 0.2);
+  border: 3rpx solid #fff;
+}
+.friend-container .avater-list .avater .close {
+  position: absolute;
+  background: #fff;
+  color: #f25859;
+  border-radius: 100%;
+  width: 24rpx;
+  height: 24rpx;
+  right: 10rpx;
+  top: 0rpx;  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50rpx;
+}
+.friend-container .avater-list .avater .avater-name {
+  font-size: 12px;
+  text-align: center;
+  word-break: break-all;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-top: 8rpx;
+}
+
+.friend-list {
+  padding-bottom: 120rpx;
+}
+
+.friend-list .friend-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 27rpx 20rpx;
+  border-bottom: 1rpx solid #ccd3d8;
+}
+.friend-list .friend-item .avater {
+  display: flex;
+  flex-basis: 120rpx;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.friend-list .friend-item .avater .avater-image {
+  width: 95rpx;
+  height: 95rpx;
+  border-radius: 100%;
+  background: #fff;
+  border: 1rpx solid #f0a0ac;
+}
+.friend-list .friend-item .friend-info {
+  padding: 0 10rpx;
+  flex-grow: 1;
+  font-size: 15px;
+}
+
+.friend-list .friend-item .friend-info .friend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 0;
+}
+
+.friend-list .friend-item .friend-info .friend-header .name {
+  font-weight: 500;
+  font-size: 15px;
+}
+.friend-list .friend-item .friend-info .friend-header .status-button {
+  border: 2rpx solid #f0a0ac;
+  color: #f0a0ac;
+  font-size: 13px;
+  padding: 8rpx 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15rpx;
+}
+.friend-list .friend-item .friend-info .friend-header .status-button.active {
+  background: #f0a0ac;
+  color: #fff;
+}
+
+/* .friend-list .friend-item .friend-info .recent */
+.friend-list .friend-item .friend-status {
+  flex-basis: 140rpx;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.exit-button {
+  position: fixed;
+  display: flex;
+  bottom: 10rpx;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40rpx);
+  margin-left: 20rpx;
+  border: 3rpx solid #1fb329;
+  background: rgba(225, 255, 225, 0.9);
+  padding: 20rpx;
+  color: #1fb329;
+  border-radius: 15rpx;
+}
+
+.exit-button.not-first {
+  border: 3rpx solid #f25859;
+  background: #f25859;
+  color: #fff;
+}
+
+.super-mode {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.super-mode .tip-text {
+  top: 50%;
+  position: absolute;
+  margin-top: -150rpx;
+  text-align: center;
+  width: 100%;
+}
+
+.super-mode .exit-button.super-button {
+  position: normal;
+  bottom: 120rpx;
+}

@@ -1,0 +1,27 @@
+@import "resource/iconfont/iconfont.wxss";
+
+page {
+  color: #141618;
+}
+
+/**app.wxss**/
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.app-textarea-placeholder {
+  color: #ffd1d9;
+}
+.app-input-placeholder {
+  color: #ffd1d9;
+}
+
+view,
+text,
+teatarea {
+  box-sizing: border-box;
+}

@@ -1,0 +1,35 @@
+@import "/resource/iconfont/iconfont.wxss";
+
+.button-container {
+  position: relative;
+  width: 70rpx;
+  height: 70rpx;
+}
+.button-container .button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 70rpx;
+  height: 70rpx;
+  background-color: #f0a0ac;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: cubic-bezier(0.175, 0.885, 0.52, 1.775) 200ms;
+}
+.button-container .button.disabled {
+  background: #ffd1d9;
+}
+.button-container .button.disabled:hover {
+  width: 70rpx;
+  height: 70rpx;
+}
+.button-container .button:hover {
+  width: 85rpx;
+  height: 85rpx;
+}
+.button-container .button .iconfont {
+  font-size: 36rpx;
+}

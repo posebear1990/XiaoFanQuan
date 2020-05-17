@@ -1,0 +1,22 @@
+<view class="base-message {{isActive && 'active'}}" bind:longpress="onMessageLongPress" data-item="{{displayMessage}}" bind:tap="onCloseMessageMask">
+	<view class="avatar" bind:tap="onUserAvatarTap">
+		<image class="avater-image" mode="widthFix" src="{{displayMessage.user.profile_image_url_large}}"></image>
+	</view>
+	<view class="base-message-info-container">
+		<view class="base-message-info">
+			<text class="home-user">{{displayMessage.user.name}}</text>
+			<text class="home-date" vx:if="{{displayMessage.created_at}}">{{displayMessage.created_at}}</text>
+			<slot name="extra"></slot>
+		</view>
+		<view class="base-message-content">
+			<text wx:for="{{displayMessage.text}}" wx:key="content" wx:if="{{!!item.text}}" class="{{ item.type }} text-content" bind:tap="{{ item.type === 'topic' ? 'onTopicTap' : 'onUserAvatarTap' }}" data-item="{{item}}">{{item.text}}</text>
+		</view>
+		<image bind:tap="onTapPictuer" data-item="{{displayMessage}}" wx:if="{{displayMessage.photo}}" class="base-message-image" mode="widthFix" src="{{displayMessage.photo.largeurl}}" />
+		<view class="base-message-action">
+			<base-button wx:if="{{displayMessage.is_self}}" icon="delete" bind:tap="onDelete" data-item="{{displayMessage}}" />
+			<base-button wx:else icon="{{( displayMessage.favorited ? 'star_fill' : 'star' )}}" bind:tap="onFavorite" data-item="{{displayMessage}}" />
+			<base-button icon="exchange" bind:tap="onRepost" data-item="{{displayMessage}}" />
+			<base-button icon="reply" bind:tap="onReply" data-item="{{displayMessage}}" />
+		</view>
+	</view>
+</view>

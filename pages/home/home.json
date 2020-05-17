@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "main-button": "/components/MainButton/MainButton",
+    "base-loading": "/components/BaseLoading/BaseLoading",
+    "base-message": "/components/BaseMessage/BaseMessage"
+  }
+}

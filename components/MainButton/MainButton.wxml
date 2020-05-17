@@ -1,0 +1,9 @@
+<view class="main-button-container  {{isButtonActive && 'active'}} {{isTouched && 'touched'}}" bind:tap="onCloseButtonMask">
+    <image class="main-button" bind:tap="onMainButtonTap" bind:longpress="onMainButtonLongPress" bind:touchstart="onMainButtonTouchStart" bind:touchend="onMainButtonTouchEnd" mode="scaleToFill" src="{{url}}" />
+    
+    <view class="helper-button">
+        <base-button class="helper-button-button compile" icon="compile" bind:tap="onWriteTap" ></base-button>
+        <base-button class="helper-button-button photo" icon="photo" bind:tap="onPhotoTap" ></base-button>
+        <base-button class="helper-button-button setting" icon="setting" bind:tap="onSettingTap" ></base-button>
+    </view>
+</view>

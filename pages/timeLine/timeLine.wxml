@@ -1,0 +1,8 @@
+<!-- index.wxml -->
+<view class="home-container">
+	<view class="home-paper main">
+		<base-message wx:for="{{timelines}}" wx:key="rawid" message="{{item}}" isActive="{{messageActive}}" disableAvatarTap="{{true}}" bind:onActionStart="onActionStart" bind:onActionSuccess="onActionSuccess" bind:onActionComplete="onActionComplete" />
+	</view>
+	<base-loading show="{{showLoading}}" />
+</view>
+<main-button id="mainButton" url="/resource/img/main.png" bind:buttonTap="onMainButtonTap" bind:settingTap="onSettingTap" bind:writeTap="onWriteTap" bind:photoTap="onPhotoTap" />

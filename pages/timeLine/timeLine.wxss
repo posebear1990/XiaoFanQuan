@@ -1,0 +1,7 @@
+page {
+  overflow-x: hidden;
+}
+
+.home-container .home-paper {
+  background: rgb(253, 253, 253);
+}

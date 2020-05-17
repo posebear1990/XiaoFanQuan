@@ -1,0 +1,23 @@
+<!-- index.wxml -->
+<view class="home-container">
+	<view class="indicator-dots" style="top: {{indicatorTop}}px;height: {{indicatorHeight}}px;border-radius:{{indicatorHeight-5}}px;" bind:tap="onIndicatorTap">
+		<view class="indicator-dot {{current === 0 && 'active'}}"></view>
+		<view class="indicator-dot {{newMention && 'mention'}} {{current === 1 && 'active'}}"></view>
+		<view class="indicator-title {{current === 0 && 'active'}}">首页</view>
+		<view class="indicator-title {{current === 1 && 'active'}}">提及</view>
+	</view>
+	<swiper style="height: {{height}};padding-top: {{indicatorTop + indicatorHeight + 1}}px;min-height: 100vh;" current="{{current}}" bind:change="onSwiperChange" easing-function="easeInOutCubic" bind:animationfinish="onAnimationFinish">
+		<swiper-item>
+			<view class="home-paper main">
+				<base-message wx:for="{{timelines}}" wx:key="rawid" message="{{item}}" isActive="{{messageActive}}" bind:onActionStart="onActionStart" bind:onActionSuccess="onActionSuccess" bind:onActionComplete="onActionComplete"><text class="message-sending" slot="extra" wx:if="{{!item.created_at}}">发送中...</text></base-message>
+			</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="home-paper mention">
+				<base-message wx:for="{{mentionLines}}" wx:key="rawid" message="{{item}}" isActive="{{messageActive}}" bind:onActionStart="onActionStart" bind:onActionSuccess="onActionSuccess" bind:onActionComplete="onActionComplete" />
+			</view>
+		</swiper-item>
+	</swiper>
+	<base-loading show="{{showLoading}}" />
+</view>
+<main-button id="mainButton" url="/resource/img/main.png" bind:buttonTap="onMainButtonTap" bind:settingTap="onSettingTap" bind:writeTap="onWriteTap" bind:photoTap="onPhotoTap" />

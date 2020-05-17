@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "特别关注",
+  "usingComponents": {
+    "base-loading": "/components/BaseLoading/BaseLoading"
+  }
+}

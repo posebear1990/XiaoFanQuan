@@ -1,0 +1,10 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="login">
+    <input confirm-type="next" bindinput="bindEmailInput" bindblur="bindBlur" class="app-login" placeholder-class="app-input-placeholder" placeholder="Username" focus="{{focus === 1}}" confirm-hold bindconfirm="goToNext" />
+    <input focus="{{focus === 2}}" confirm-type="go" bindinput="bindPwdInput" bindblur="bindBlur" class="app-password" placeholder-class="app-input-placeholder" type="password" placeholder="Password" bindconfirm="bindLoginTap" />
+    <button bindtap="bindLoginTap" class="app-login-btn" type="primary" plain="true" disabled="{{ btnDisabled }}">
+      Login
+    </button>
+  </view>
+</view>

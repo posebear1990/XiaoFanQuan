@@ -1,0 +1,79 @@
+{
+  "id": "1794903",
+  "name": "twiteMe",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "256473",
+      "name": "reply",
+      "font_class": "icon_reply",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "7766731",
+      "name": "icon_delete",
+      "font_class": "icon_delete",
+      "unicode": "eb94",
+      "unicode_decimal": 60308
+    },
+    {
+      "icon_id": "7766735",
+      "name": "icon_exchange",
+      "font_class": "icon_exchange",
+      "unicode": "eb95",
+      "unicode_decimal": 60309
+    },
+    {
+      "icon_id": "7766786",
+      "name": "icon_send",
+      "font_class": "icon_send",
+      "unicode": "eb9e",
+      "unicode_decimal": 60318
+    },
+    {
+      "icon_id": "7766798",
+      "name": "icon_star",
+      "font_class": "icon_star",
+      "unicode": "eb9f",
+      "unicode_decimal": 60319
+    },
+    {
+      "icon_id": "7772230",
+      "name": "icon_star_fill",
+      "font_class": "icon_star_fill",
+      "unicode": "ebaf",
+      "unicode_decimal": 60335
+    },
+    {
+      "icon_id": "7772244",
+      "name": "icon_roundclose_fill",
+      "font_class": "icon_roundclose_fill",
+      "unicode": "ebb2",
+      "unicode_decimal": 60338
+    },
+    {
+      "icon_id": "7766725",
+      "name": "icon_compile",
+      "font_class": "icon_compile",
+      "unicode": "eb93",
+      "unicode_decimal": 60307
+    },
+    {
+      "icon_id": "7766772",
+      "name": "icon_photo",
+      "font_class": "icon_photo",
+      "unicode": "eb9a",
+      "unicode_decimal": 60314
+    },
+    {
+      "icon_id": "7766795",
+      "name": "icon_setting",
+      "font_class": "icon_setting",
+      "unicode": "eb9d",
+      "unicode_decimal": 60317
+    }
+  ]
+}

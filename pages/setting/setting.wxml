@@ -1,0 +1,36 @@
+<!-- index.wxml -->
+<view class="friend-container">
+  <view class="avater-list">
+    <view class="avater" wx:for="{{focusUsers}}" wx:key="id">
+      <image class="avater-image" mode="widthFix" src="{{item.profile_image_url_large || '/resource/img/no-avatar.png'}}" data-index="{{index}}" bind:tap="onAvaterTap"></image>
+      <text class="avater-name">{{item.name||"虚位以待"}}</text>
+      <text wx:if="{{item}}" data-item="{{item}}" class="icon-icon_roundclose_fill iconfont close" catch:tap="onFocusTap"></text>
+    </view>
+  </view>
+  <view class="friend-list" style="margin-top: {{panelHeight}}px">
+    <!-- view.friend-search -->
+    <view class="friend-item" wx:for="{{userList}}" wx:key="id">
+      <view class="avater" bind:tap="onUserTap" data-item="{{item}}">
+        <image class="avater-image" mode="widthFix" src="{{item.profile_image_url_large}}"></image>
+      </view>
+      <view class="friend-info">
+        <view class="friend-header">
+          <view class="name">{{item.name}}</view>
+          <view class="status-button {{item.isFocused && 'active'}}" data-item="{{item}}" bind:tap="onFocusTap">
+            {{item.isFocused ? '取消特别关注' : '特别关注'}}
+          </view>
+        </view>
+        <rich-text wx:if="{{item.status}}" class="recent" nodes="{{item.status.text}}" />
+      </view>
+    </view>
+  </view>
+  <base-loading show="{{showLoading}}" />
+  <view wx:if="{{superMode}}" class="super-mode">
+    <view class="tip-text">必须关闭潘多拉盒子模式，才能恢复特别关注功能</view>
+
+    <view class="exit-button super-button" bind:tap="onCloseSuperMode">关闭潘多拉盒子模式</view>
+  </view>
+  <view class="exit-button {{notFirst && 'not-first'}}" bind:tap="onExit">
+    {{notFirst ? '退出当前登陆账号': '添加完成，进入主页'}}
+  </view>
+</view>

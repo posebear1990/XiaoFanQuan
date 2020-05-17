@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/setting/setting",
+    "pages/login/login",
+    "pages/add/add",
+    "pages/timeLine/timeLine"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#F0A0AC",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 600
+  },
+  "sitemapLocation": "sitemap.json"
+}
