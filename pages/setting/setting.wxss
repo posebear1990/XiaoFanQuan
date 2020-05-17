@@ -31,15 +31,15 @@
   background: #fff;
   color: #f25859;
   border-radius: 100%;
-  width: 24rpx;
-  height: 24rpx;
+  width: 18rpx;
+  height: 18rpx;
   right: 10rpx;
   top: 0rpx;  
 
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50rpx;
+  font-size: 45rpx;
 }
 .friend-container .avater-list .avater .avater-name {
   font-size: 12px;
