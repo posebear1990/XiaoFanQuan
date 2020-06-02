@@ -64,7 +64,7 @@
   font-weight: 500;
   color: #f0a0ac;
   padding-left: 2rpx;
-  padding-right: 6rpx;
+  padding-right: 3rpx;
 }
 
 .base-message-content .emphasize {

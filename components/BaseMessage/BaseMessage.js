@@ -54,7 +54,7 @@ Component({
       this.triggerEvent("onActionStart", { type, data: item });
       const queryString = urlUtil.stringifyQueryParameter({
         action: type,
-        message: item.text.map(str=> str.text).join(),
+        message: item.text.map(str=> str.text).join(""),
         id: item.id,
         username: item.user.name,
       });
