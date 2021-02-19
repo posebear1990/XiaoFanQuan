@@ -7,3 +7,6 @@
 
 ## 安装和使用
 替换 config/app.js 和 project.config.json 两个文件里的配置为自己的配置，然后导入小程序官方开发工具。
+
+## 功能展示
+![功能展示](./demo.jpg)
